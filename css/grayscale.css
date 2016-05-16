@@ -170,17 +170,7 @@ a:focus {
     background-size: cover;
     -o-background-size: cover;
 }
-/*
-.gradient:after {
-    content: '';
-    position: absolute;
-    width: inherit;
-    height: inherit;
-    top: 0;
-    left: 0;
-    background: -moz-linear-gradient(rgba(255, 0, 0, 0.5));
-}
-*/
+
 
 .intro .intro-body {
     display: table-cell;
@@ -193,6 +183,10 @@ a:focus {
 
 .intro .intro-body .intro-text {
     font-size: 18px;
+}
+
+.red {
+    color: #E42525;
 }
 
 @media(min-width:768px) {
