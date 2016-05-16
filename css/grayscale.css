@@ -147,13 +147,40 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
+    /*
+    background: 
+      -moz-linear-gradient(rgba(255, 0, 0, 0.5)),
+      url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
+      
+    background:
+      -webkit-gradient(-45deg,red,green),
+      url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
+      */
+    background:
+      linear-gradient(
+      rgba(140, 100, 100, 0.45), 
+      rgba(140, 100, 100, 0.45)
+    ),
+      url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
     background-color: #000;
+
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
+/*
+.gradient:after {
+    content: '';
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    left: 0;
+    background: -moz-linear-gradient(rgba(255, 0, 0, 0.5));
+}
+*/
 
 .intro .intro-body {
     display: table-cell;
