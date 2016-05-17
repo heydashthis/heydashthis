@@ -16,7 +16,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon cloudy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="cloud"></div>');
-        $('#solution-temperature').html('Prends un café et <span class="red">contacte-moi!</span>!');
+        $('#solution-temperature').html('Prends un café et ');
         console.log('ok');
         break;
       case "Clear":
@@ -24,7 +24,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon sunny clear');
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
-        $('#solution-temperature').html('Prends une bière et <span class="red">contacte-moi!</span>!');
+        $('#solution-temperature').html('Prends une bière et ');
         console.log('non');
       break;
       case "Snow":
@@ -34,7 +34,7 @@ $(document).ready(function() {
         $('#icon').append('<div class="snow"></div>');
         $('.snow').append('<div class="flake"></div>');
         $('.snow').append('<div class="flake"></div>');
-        $('#solution-temperature').html('Reste calme et <span class="red">contacte-moi!</span>');
+        $('#solution-temperature').html('Reste calme et ');
       break;
       case "Drizzle":
       case "Rain":
@@ -42,7 +42,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon rainy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="rain"></div>');
-        $('#solution-temperature').html('Prends un café et <span class="red">contacte-moi!</span>!');
+        $('#solution-temperature').html('Prends un café et ');
         break;
       case "Thunderstorm":
         $('#diagnostic-temperature').html("C'est VRAIMENT pas beau dehors.");
@@ -51,11 +51,11 @@ $(document).ready(function() {
         $('#icon').append('<div class="lightning"></div>');
         $('.lightning').append('<div class="bolt"></div>');
         $('.lightning').append('<div class="bolt"></div>');
-        $('#solution-temperature').html('Sors dehors ou <span class="red">contacte-moi!</span>!');
+        $('#solution-temperature').html('Sors dehors ou ');
     }
   });        
   });
   }else{
-    $("#location").html("Please turn on Geolocator on Browser.")
+    $("#location").html("Ouvre ton géolocaliseur et")
   }
 });
