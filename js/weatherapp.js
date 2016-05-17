@@ -10,39 +10,48 @@ $(document).ready(function() {
     $('#cloud-forecast').html(json.weather[0].main + '/ '+ json.weather[0].description);
     $('#unit').html('C');
     //WEATHER CONDITIONS FOUND HERE: http://openweathermap.org/weather-conditions
-    console.log(json.weather[0].main);
-    json.weather[0].main = "Clear";
     switch (json.weather[0].main) {
       case "Clouds":
         $('#diagnostic-temperature').html("C'est gris dehors.");
         $('#icon').addClass('icon cloudy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="cloud"></div>');
-        $('#solution-temperature').html("Prends un café et appelle-moi!");
+        $('#solution-temperature').html('Prends un café et <span class="red">contacte-moi!</span>!');
         console.log('ok');
         break;
       case "Clear":
-        $('#weather-app').css("background-color", "#0000AA");
+        $('#diagnostic-temperature').html("Il fait beau dehors!");
         $('#icon').addClass('icon sunny clear');
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
+        $('#solution-temperature').html('Prends une bière et <span class="red">contacte-moi!</span>!');
         console.log('non');
       break;
       case "Snow":
-        $('#icon').addClass('icon flurries');
-        $('#icon').append('cloud');
-        $('#icon').append('snow');
+        $('#diagnostic-temperature').html("Il neige dehors???!!!!");
+        $('#icon').addClass('icon ');
+        $('#icon').append('<div class="cloud"></div>');
+        $('#icon').append('<div class="snow"></div>');
+        $('.snow').append('<div class="flake"></div>');
+        $('.snow').append('<div class="flake"></div>');
+        $('#solution-temperature').html('Reste calme et <span class="red">contacte-moi!</span>');
       break;
+      case "Drizzle":
       case "Rain":
         $('#diagnostic-temperature').html("Il pleut dehors.");
         $('#icon').addClass('icon rainy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="rain"></div>');
-        $('#solution-temperature').html("Prends un café et appelle-moi!");
+        $('#solution-temperature').html('Prends un café et <span class="red">contacte-moi!</span>!');
         break;
-      //case "Dizzle":
-      //case: "Thunderstorm"
-
+      case "Thunderstorm":
+        $('#diagnostic-temperature').html("C'est VRAIMENT pas beau dehors.");
+        $('#icon').addClass('icon thunder-storm thunderstorm');
+        $('#icon').append('<div class="cloud"></div>');
+        $('#icon').append('<div class="lightning"></div>');
+        $('.lightning').append('<div class="bolt"></div>');
+        $('.lightning').append('<div class="bolt"></div>');
+        $('#solution-temperature').html('Sors dehors ou <span class="red">contacte-moi!</span>!');
     }
   });        
   });
