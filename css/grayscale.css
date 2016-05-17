@@ -161,7 +161,7 @@ a:focus {
       rgba(140, 100, 100, 0.45), 
       rgba(140, 100, 100, 0.45)
     ),
-      url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
+    url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
     background-color: #000;
 
     
