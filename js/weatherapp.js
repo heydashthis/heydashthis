@@ -13,7 +13,7 @@ $(document).ready(function() {
     console.log(json.weather[0].main);
     switch (json.weather[0].main) {
       case "Clouds":
-        $('#diagnostic-temperature').html("C'est gris dehors.");
+        $('#diagnostic-temperature').html("C'est gris dehors");
         $('#icon').addClass('icon cloudy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="cloud"></div>');
@@ -21,7 +21,7 @@ $(document).ready(function() {
         console.log('ok');
         break;
       case "Clear":
-        $('#diagnostic-temperature').html("Il fait beau dehors!");
+        $('#diagnostic-temperature').html("Il fait beau dehors");
         $('#icon').addClass('icon sunny clear');
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
@@ -39,14 +39,14 @@ $(document).ready(function() {
       break;
       case "Drizzle":
       case "Rain":
-        $('#diagnostic-temperature').html("Il pleut dehors.");
+        $('#diagnostic-temperature').html("Il pleut dehors");
         $('#icon').addClass('icon rainy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="rain"></div>');
         $('#solution-temperature').html('Prends un café et ');
         break;
       case "Thunderstorm":
-        $('#diagnostic-temperature').html("C'est VRAIMENT pas beau dehors.");
+        $('#diagnostic-temperature').html("C'est VRAIMENT pas beau dehors");
         $('#icon').addClass('icon thunder-storm thunderstorm');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="lightning"></div>');
