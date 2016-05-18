@@ -349,9 +349,15 @@ a:focus {
 
 .marketing-section {
     width: 100%;
+    height: auto;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/marketing-bg.png) no-repeat center center scroll;
+    background: 
+      linear-gradient(
+      rgba(100, 100, 100, 0.45), 
+      rgba(100, 100, 100, 0.45)
+      ),
+      url(../img/marketing-bg.png) no-repeat center center scroll;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
