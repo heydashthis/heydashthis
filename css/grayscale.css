@@ -304,6 +304,11 @@ a:focus {
     -o-background-size: cover;
 }
 
+.marketing-section {
+    background: 
+      url(../img/marketing-bg.jpg) no-repeat center center scroll;
+}
+
 
 
 @media(min-width:767px) {
