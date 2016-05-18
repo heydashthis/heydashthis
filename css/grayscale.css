@@ -354,10 +354,11 @@ a:focus {
     color: #fff;
     background: 
       linear-gradient(
-      rgba(100, 100, 100, 0.45), 
-      rgba(100, 100, 100, 0.45)
+      rgba(90, 90, 90, 0.75), 
+      rgba(90, 90, 90, 0.75)
       ),
       url(../img/marketing-bg.png) no-repeat center center scroll;
+
       -webkit-background-size: cover;
       -moz-background-size: cover;
       background-size: cover;
