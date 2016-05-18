@@ -36,7 +36,12 @@ $('.navbar-collapse ul li a').click(function() {
   }
 });
 
-
+//Toggle the phone-switch button
+$(function(){
+    $('#phone-switch').click(function() {
+      $('#phone-number').toggle();
+    });
+});
 
 $(window).scroll
 

@@ -54,15 +54,19 @@ p,  {
     }
 }
 
-a {
+a,
+.a-like {
     color: #42dca3;
+    cursor: pointer;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 }
 
 a:hover,
-a:focus {
+a:focus,
+.a-like:hover,
+.a-like:focus {
     text-decoration: none;
     color: #1d9b6c;
 }
@@ -328,11 +332,11 @@ a:focus {
     width: 60%;
 }
 
-/*.table-cell {
-    display: table-cell;
-    vertical-align: middle;
-    max-width:2%;
-}*/
+.initially-hidden {
+    display: none;
+}
+
+
 
 .row {
     display: table-row;
