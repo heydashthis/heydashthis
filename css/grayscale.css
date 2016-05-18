@@ -42,19 +42,9 @@ p,  {
     font-size: 18px;
     line-height: 2.75;
     text-align: center;
-    width: auto;
 }
 
 
-.float-left {
-    float: left;
-    margin-left: 1%;
-}
-
-/*.float-right {
-    float: right;
-    margin-right: 5%;
-}*/
 
 @media(min-width:768px) {
     p {
@@ -332,17 +322,25 @@ a:focus {
 }
 
 .table {
-    display: flex;
+    display: table;
     border: 2px solid cyan;
     margin: 0 auto;
     width: 60%;
 }
 
-.table-cell {
+/*.table-cell {
     display: table-cell;
     vertical-align: middle;
     max-width:2%;
+}*/
+
+.row {
+    display: table-row;
 }
+.cell {
+    display: table-cell;
+}
+
 .marketing-section {
     width: 100%;
     padding: 50px 0;
