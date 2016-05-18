@@ -10,6 +10,7 @@ $(document).ready(function() {
     $('#cloud-forecast').html(json.weather[0].main + '/ '+ json.weather[0].description);
     $('#unit').html('C');
     //WEATHER CONDITIONS FOUND HERE: http://openweathermap.org/weather-conditions
+    console.log(json.weather[0].main);
     switch (json.weather[0].main) {
       case "Clouds":
         $('#diagnostic-temperature').html("C'est gris dehors.");

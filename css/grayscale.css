@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+ 
 body {
     width: 100%;
     height: 100%;
@@ -30,7 +30,7 @@ h6 {
     letter-spacing: 1px;
 }
 
-p {
+p, .p-like {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -189,6 +189,14 @@ a:focus {
     color: #E42525;
 }
 
+.pic-wrapper {
+    border: 3px solid #42dca3;
+    border-radius: 50%;
+    margin-bottom: 35px;
+    height: 20%;
+    width: 20%;
+}
+
 @media(min-width:768px) {
     .intro {
         height: 100%;
@@ -203,6 +211,7 @@ a:focus {
         font-size: 26px;
     }
 }
+
 
 .btn-circle {
     width: 70px;
@@ -286,7 +295,8 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: 
+      url(../img/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -352,6 +362,7 @@ ul.banner-social-buttons {
         margin-bottom: 0;
     }
 }
+
 
 footer {
     padding: 50px 0;
