@@ -336,9 +336,15 @@ a:focus {
 
 .row {
     display: table-row;
+    height:50%;
 }
 .cell {
     display: table-cell;
+    vertical-align: middle;
+}
+
+.align-left {
+    text-align: left;
 }
 
 .marketing-section {
