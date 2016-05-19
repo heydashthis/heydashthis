@@ -313,8 +313,8 @@ a:focus,
 
     background: 
       linear-gradient(
-      rgba(100, 100, 120, 0.55), 
-      rgba(100, 100, 120, 0.55)
+      rgba(100, 100, 120, 0.65), 
+      rgba(100, 100, 120, 0.65)
     ),
       url(../img/fish.jpeg) no-repeat center center scroll;
     background-color: #000;
