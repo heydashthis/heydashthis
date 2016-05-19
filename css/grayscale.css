@@ -31,7 +31,7 @@ h6 {
     letter-spacing: 1px;
 }
 
-p,  {
+p  {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
@@ -364,8 +364,8 @@ a:focus,
     color: #fff;
     background: 
       linear-gradient(
-      rgba(100, 100, 100, 0.45), 
-      rgba(100, 100, 100, 0.45)
+      rgba(100, 100, 100, 0.55), 
+      rgba(100, 100, 100, 0.55)
       ),
       url(../img/marketing-bg.jpg) no-repeat center center scroll;
 
@@ -386,6 +386,14 @@ a:focus,
         padding: 100px 0;
     }
 
+    .marketing-section {
+        padding: 6% 0 29% 0;
+    }
+    
+    .padding-bottom {
+        -moz-padding: 200px;
+        -webkit-padding: 200px;
+    }
     
 
 }
@@ -442,7 +450,7 @@ ul.banner-social-buttons {
 }
 
 .padding-bottom {
-    padding-bottom: 10%;
+    padding-bottom: 100px;
 }
 
 
