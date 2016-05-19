@@ -11,9 +11,8 @@ $(document).ready(function() {
     //WEATHER CONDITIONS FOUND HERE: http://openweathermap.org/weather-conditions
     
     var currentWeather = json.currently.icon;
+
     switch (currentWeather) {
-      case "partly-cloudy-day":
-      case "partly-cloudy-night":
       case "cloudy":
         $('#diagnostic-temperature').html("C'est gris dehors");
         $('#icon').addClass('icon cloudy');
@@ -21,6 +20,17 @@ $(document).ready(function() {
         $('#icon').append('<div class="cloud"></div>');
         $('#solution-temperature').html('Prends un café et ');
         break;
+
+      case "partly-cloudy-day":
+      case "partly-cloudy-night":
+      $('#diagnostic-temperature').html("C'est à la fois gris et beau dehors");
+        $('#icon').addClass('icon sunny');
+        $('#icon').append('<div class="sun"></div>');
+        $('.sun').append('<div class="rays"></div>');
+        $('#icon').append('<div class="cloud"></div>');
+        $('#solution-temperature').html('Prends un café et ');
+        break;
+
       case "clear-day":
       case "clear-night":
         $('#diagnostic-temperature').html("Il fait beau dehors");
@@ -28,8 +38,8 @@ $(document).ready(function() {
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
         $('#solution-temperature').html('Prends une bière et ');
-        console.log('non');
       break;
+
       case "snow":
       case "sleet":
         $('#diagnostic-temperature').html("Il neige dehors???!!!!");
@@ -40,6 +50,7 @@ $(document).ready(function() {
         $('.snow').append('<div class="flake"></div>');
         $('#solution-temperature').html('Reste calme et ');
       break;
+
       case "fog":
       case "rain":
         $('#diagnostic-temperature').html("Il pleut dehors");
@@ -48,6 +59,7 @@ $(document).ready(function() {
         $('#icon').append('<div class="rain"></div>');
         $('#solution-temperature').html('Prends un café et ');
         break;
+
       case "wind":
         $('#diagnostic-temperature').html("Le temps est bizarre en ce moment");
         $('#icon').addClass('icon thunder-storm thunderstorm');
@@ -61,6 +73,7 @@ $(document).ready(function() {
         $('#diagnostic-temperature').html("Le temps est indescriptible en ce moment");
         $('#solution-temperature').html('Oublie le temps et ');
         break;
+
           }
         }
       });
