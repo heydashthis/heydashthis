@@ -313,8 +313,8 @@ a:focus,
 
     background: 
       linear-gradient(
-      rgba(100, 100, 100, 0.75), 
-      rgba(100, 100, 100, 0.75)
+      rgba(100, 100, 120, 0.55), 
+      rgba(100, 100, 120, 0.55)
     ),
       url(../img/fish.jpeg) no-repeat center center scroll;
     background-color: #000;
@@ -364,15 +364,15 @@ a:focus,
     color: #fff;
     background: 
       linear-gradient(
-      rgba(90, 90, 90, 0.75), 
-      rgba(90, 90, 90, 0.75)
+      rgba(100, 100, 100, 0.45), 
+      rgba(100, 100, 100, 0.45)
       ),
-      url(../img/marketing-bg.png) no-repeat center center scroll;
+      url(../img/marketing-bg.jpg) no-repeat center center scroll;
 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      background-size: cover;
-      -o-background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 
