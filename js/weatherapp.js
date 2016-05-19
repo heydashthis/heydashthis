@@ -23,12 +23,12 @@ $(document).ready(function() {
 
       case "partly-cloudy-day":
       case "partly-cloudy-night":
-      $('#diagnostic-temperature').html("C'est à la fois gris et beau dehors");
+      $('#diagnostic-temperature').html("C'est partiellement nuageux dehors");
         $('#icon').addClass('icon sunny');
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
         $('#icon').append('<div class="cloud"></div>');
-        $('#solution-temperature').html('Prends un café et ');
+        $('#solution-temperature').html('Prie pour plus de soleil et ');
         break;
 
       case "clear-day":
