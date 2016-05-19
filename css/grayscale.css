@@ -327,7 +327,6 @@ a:focus,
 
 .table {
     display: table;
-    border: 2px solid cyan;
     margin: 0 auto;
     width: 60%;
 }
@@ -342,6 +341,13 @@ a:focus,
     display: table-row;
     height:50%;
 }
+/*
+.row:first-child {
+    border-bottom: 2px solid cyan;
+}
+*/
+
+
 .cell {
     display: table-cell;
     vertical-align: middle;
@@ -379,6 +385,8 @@ a:focus,
     .technical-section {
         padding: 100px 0;
     }
+
+    
 
 }
 
@@ -426,6 +434,11 @@ ul.banner-social-buttons {
     ul.banner-social-buttons li:last-child {
         margin-bottom: 0;
     }
+
+    .cell-border-bottom {
+    border-bottom: 2px dashed cyan;
+    padding-bottom: 5%;
+  }
 }
 
 
