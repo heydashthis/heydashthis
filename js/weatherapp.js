@@ -9,7 +9,7 @@ $(document).ready(function() {
       dataType: "jsonp",
       success: function(json) {
     //WEATHER CONDITIONS FOUND HERE: http://openweathermap.org/weather-conditions
-    console.log(json);
+    
     var currentWeather = json.currently.icon;
     switch (currentWeather) {
       case "partly-cloudy-day":
@@ -20,7 +20,6 @@ $(document).ready(function() {
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="cloud"></div>');
         $('#solution-temperature').html('Prends un café et ');
-        console.log('ok');
         break;
       case "clear-day":
       case "clear-night":
