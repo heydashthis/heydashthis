@@ -156,13 +156,12 @@ a:focus,
 
 .intro {
     display: table;
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    max-height: 100%;
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    /*
+    
     background: 
       -moz-linear-gradient(rgba(255, 0, 0, 0.5)),
       url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
@@ -170,7 +169,7 @@ a:focus,
     background:
       -webkit-gradient(-45deg,red,green),
       url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
-      */
+      
     background:
       linear-gradient(
       rgba(140, 100, 100, 0.45), 
