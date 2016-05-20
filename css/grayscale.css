@@ -161,15 +161,15 @@ a:focus,
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    
+    /*
     background: 
       -moz-linear-gradient(rgba(255, 0, 0, 0.5)),
       url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
       
     background:
-      -webkit-gradient(-45deg,red,green),
+      -webkit-linear-gradient(rgba(255, 0, 0, 0.5)),
       url(../img/beer-popcorn.jpg) no-repeat bottom center scroll;
-      
+     */ 
     background:
       linear-gradient(
       rgba(140, 100, 100, 0.45), 
@@ -385,7 +385,7 @@ a:focus,
     .technical-section {
         padding: 100px 0;
     }
-
+    
     .marketing-section {
         padding: 6% 0 29% 0;
     }
