@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon cloudy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="cloud"></div>');
-        $('#solution-temperature').html('Prends un café et ');
+        $('#solution-temperature').html('Prenez un café et ');
         break;
 
       case "partly-cloudy-day":
@@ -28,7 +28,7 @@ $(document).ready(function() {
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
         $('#icon').append('<div class="cloud"></div>');
-        $('#solution-temperature').html('Prie pour plus de soleil et ');
+        $('#solution-temperature').html('Priez pour plus de soleil et ');
         break;
 
       case "clear-day":
@@ -37,7 +37,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon sunny clear');
         $('#icon').append('<div class="sun"></div>');
         $('.sun').append('<div class="rays"></div>');
-        $('#solution-temperature').html('Prends une bière et ');
+        $('#solution-temperature').html('Prenez du soleil et ');
       break;
 
       case "snow":
@@ -48,7 +48,7 @@ $(document).ready(function() {
         $('#icon').append('<div class="snow"></div>');
         $('.snow').append('<div class="flake"></div>');
         $('.snow').append('<div class="flake"></div>');
-        $('#solution-temperature').html('Reste calme et ');
+        $('#solution-temperature').html('Restez calme et ');
       break;
 
       case "fog":
@@ -57,7 +57,7 @@ $(document).ready(function() {
         $('#icon').addClass('icon rainy');
         $('#icon').append('<div class="cloud"></div>');
         $('#icon').append('<div class="rain"></div>');
-        $('#solution-temperature').html('Prends un café et ');
+        $('#solution-temperature').html('Prenez un café et ');
         break;
 
       case "wind":
@@ -67,11 +67,11 @@ $(document).ready(function() {
         $('#icon').append('<div class="lightning"></div>');
         $('.lightning').append('<div class="bolt"></div>');
         $('.lightning').append('<div class="bolt"></div>');
-        $('#solution-temperature').html('Sors dehors ou ');
+        $('#solution-temperature').html('Sortez dehors ou ');
         break;
       default:
         $('#diagnostic-temperature').html("Le temps est indescriptible en ce moment");
-        $('#solution-temperature').html('Oublie le temps et ');
+        $('#solution-temperature').html('Oubliez le temps et ');
         break;
 
           }
